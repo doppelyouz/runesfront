@@ -4,7 +4,7 @@ import FirstPage from "./pages/FirstPage";
 import { Routes, Route, json } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import GeneralPage from "./pages/GeneralPage";
-
+import { useRef } from "react";
 
 import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
@@ -13,6 +13,9 @@ import { authorise } from "./api/authorise";
 import { setUser } from "./redux/features/userSlice";
 import { useDispatch } from "react-redux";
 function App() {
+  const pathname = useRef();
+  pathname.current = window.location.pathname;
+  var invitCode = pathname.current.split('/')[1]
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch()
   const isTest = true;
@@ -28,7 +31,7 @@ function App() {
     }
                 
     if (isTest){
-      authorise('username', 343434).then(json=>{
+      authorise('username', invitCode).then(json=>{
         console.log(json)
        dispatch(setUser(json))
     setLoading(false)
