@@ -1,0 +1,453 @@
+.container {
+    position: relative;
+    display: flex;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.backgroundWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.backgroundWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.innerContainer {
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+.baseWrapper {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.baseWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.runeMiddleWrapper {
+    position: absolute;
+    top: 24.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 18%;
+}
+
+.runeMiddleWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.rune1Wrapper {
+    position: absolute;
+    top: 13%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 14%;
+}
+
+.rune1Wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.rune2Wrapper {
+    position: absolute;
+    top: 13%;
+    right: 7%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 14%;
+}
+
+.rune2Wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.rune3Wrapper {
+    position: absolute;
+    top: 34%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 14%;
+}
+
+.rune3Wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.rune4Wrapper {
+    position: absolute;
+    top: 34.5%;
+    right: 6.5%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 14%;
+}
+
+.rune4Wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.inviteWrapper {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 85%;
+}
+
+.inviteWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.shopWrapper {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 85%;
+}
+
+.shopWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.manaWrapper {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.manaWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.manaAddWrapper {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    z-index: 2;
+    width: 23%;
+}
+
+.manaText {
+    position: absolute;
+    bottom: 52%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 360px) {
+    .manaText {
+        font-size: 17px;
+        bottom: 56%;
+    }
+}
+
+.progressBar {
+    position: absolute;
+    bottom: 36%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 70%;
+    height: 20px;
+    margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+    .manaText {
+        font-size: 20px;
+        bottom: 55%;
+    }
+}
+
+.barContainerClassName {
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+.profileIconWrapper {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    z-index: 2;
+    width: 15%;
+}
+
+.profileIconWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.questionWrapper {
+    position: absolute;
+    top: 2%;
+    right: 19%;
+    z-index: 2;
+    width: 10%;
+}
+
+.questionWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.generalBalanceContainer {
+    position: absolute;
+    width: 100%;
+    top: 2%;
+    left: 3%;
+    z-index: 3;
+}
+
+.balanceFigure1Wrapper {
+    position: absolute;
+    z-index: 2;
+    width: 40%;
+}
+
+.balanceFigure1Wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.balanceFigure2Wrapper {
+    position: absolute;
+    top: 20%;
+    width: 36%;
+}
+
+.balanceFigure2Wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.addWrapper {
+    position: absolute;
+    top: 2%;
+    left: 32.8%;
+    width: 10%;
+    z-index: 4;
+}
+
+.addWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.tonBalance {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    z-index: 4;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.fehuBalance { 
+    position: absolute;
+    bottom: 12%;
+    left: 10%;
+    z-index: 4;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media (max-width: 400px) {
+    .fehuBalance {
+        bottom: 10%;
+    }
+} 
+
+@media (max-width: 380px) {
+    .fehuBalance {
+        bottom: 8%;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .tonBalance {
+        top: 22%;
+        font-size: 18px;
+    }
+} 
+.runeMiddleTime {
+    position: absolute;
+    top: 12.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+
+
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+.rune1Time {
+    position: absolute;
+    top: 12%;
+    left: 28%;
+    z-index: 3;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+    
+
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+.rune2Time {
+    position: absolute;
+    top: 33%;
+    left: 28%;
+    z-index: 3;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+
+
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+.rune3Time {
+    position: absolute;
+    top: 12%;
+    right: 28%;
+    z-index: 3;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+
+
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+.rune4Time {
+    position: absolute;
+    top: 33%;
+    right: 28%;
+    z-index: 3;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+
+
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+@media (max-width: 360px) {
+    .rune1Time {
+        font-size: 15px;
+    }
+
+    .rune2Time {
+        font-size: 15px;
+    }
+
+    .rune3Time {
+        font-size: 15px;
+    }
+
+    .rune4Time {
+        font-size: 15px;
+    }
+
+    .runeMiddleTime {
+        font-size: 18px;
+    }
+}
+
+.link {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}

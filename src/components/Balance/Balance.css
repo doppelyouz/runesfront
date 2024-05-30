@@ -1,0 +1,21 @@
+.balanceContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px 20px 0 20px;
+}
+
+@media (max-width: 375px) {
+    .balanceContainer {
+        padding: 10px 10px 0 10px;
+    }
+}
+
+.balanceText {
+    font-size: 20px;
+    color: #9fc1cf;
+    text-transform: uppercase;
+}

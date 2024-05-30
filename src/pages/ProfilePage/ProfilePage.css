@@ -1,0 +1,23 @@
+.container {
+    position: relative;
+    border: 7px solid black;
+    background-color: #5e7d93;
+    height: 100%;
+    width: 100%;
+}
+
+.innerContainerProfile {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 7px solid #809ba6;
+    padding-bottom: 15px;
+}
+
+.mainContentProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

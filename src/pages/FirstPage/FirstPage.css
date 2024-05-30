@@ -1,0 +1,52 @@
+.containerFirstPage {
+    position: relative;
+    /* max-width: 450px; */
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .firstBackgroundWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .firstBackgroundWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .stoneWrapper {
+    position: absolute;
+    bottom: 0;
+    height: 450px;
+    width: 100%;
+  }
+  
+  .stoneWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: bottom;
+  }
+  
+  .logoWrapper {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+    width: 250px;
+  }
+  
+  .logoWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  

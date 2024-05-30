@@ -1,0 +1,124 @@
+
+/* ---nullification--- */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background-color: hsla(218, 57%, 97%, 1);
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  font-family: 'Luckiest Guy', cursive;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+table {
+  border-collapse: collapse; /* Убирает двойные границы между ячейками */
+  border-spacing: 0; /* Убирает отступы между ячейками */
+  width: 100%; /* Задает ширину таблицы */
+  margin: 0; /* Убирает внешние отступы */
+}
+
+table,
+th,
+td {
+  border: none; /* Убирает границы */
+  padding: 0; /* Убирает внутренние отступы */
+}
+
+th,
+td {
+  text-align: left; /* Выравнивание текста в ячейках */
+  vertical-align: top; /* Вертикальное выравнивание содержимого ячеек */
+  font-weight: inherit;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+ul {
+  list-style-position: inside;
+}
+
+/* ---end nullification--- */

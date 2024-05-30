@@ -1,0 +1,55 @@
+.storyDrawerContainer {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border: 4px solid black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.storyDrawerContainer::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-top-left-radius: 46px;
+    border-top-right-radius: 46px;
+    bottom: 0px;
+    border: 4px solid #809ba6;
+    background: #5e7d93;
+    pointer-events: none;
+}
+
+.storyDrawer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    padding-top: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+}
+
+.storyTitle {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.storyDesc {
+    border: 2px solid black;
+    background: #809ba6;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+}

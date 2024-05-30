@@ -1,0 +1,28 @@
+.header {
+  &__buttons {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__close {
+  position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    color: #4c4c4c;
+  }
+}
+
+.hide {
+  visibility: hidden;
+}

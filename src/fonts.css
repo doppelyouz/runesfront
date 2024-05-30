@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'AlphaFridgeMagnets';
+    src: url('./fonts/AlphaFridgeMagnets.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Toyz';
+    src: url('./fonts/Toyz.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

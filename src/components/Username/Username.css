@@ -1,0 +1,33 @@
+.usernameContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    gap: 5px;
+    border: 7px solid #809ba6;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.avatarWrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.avatarWrapper img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.usernameText {
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase;
+}

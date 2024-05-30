@@ -1,0 +1,9 @@
+.double-border {
+  position: relative;
+}
+
+.double-border-inner {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+}

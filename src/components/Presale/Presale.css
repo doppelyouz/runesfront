@@ -1,0 +1,38 @@
+.presale {
+    position: relative;
+    width: calc(100% - 40px);
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 4px solid black;
+    border-radius: 150px;
+
+    padding: 15px 0px;
+    margin: 30px 0;
+}
+
+@media (max-width: 375px) {
+    .presale {
+        width: calc(100% - 20px);
+    }
+}
+
+.presale::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 4px solid #809ba6;
+    border-radius: 160px;
+    pointer-events: none;
+}
+
+.text {
+    font-size: 35px;
+    color: #809ba6;
+}
