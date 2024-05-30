@@ -1,5 +1,5 @@
 export const tgLink = 'https://t.me/TON_Runes_bot'
-export const backendDomain = '127.0.0.1:8000'
+export const backendDomain = 'https://runesback.yuriyzholtov.com/'
 
 export const REFILL_MODAL_TITLE = {
   REFILL: 'Пополнение баланса',
