@@ -13,7 +13,8 @@ user.current=useSelector(state=>state.user.user)
 const dispatch = useDispatch()
 function buyPropHandler(itemId){
   buyStone(user.current.id, itemId, user.current.sign).then(json=>{
-    dispatch(setUser(json))  
+    if (json.id){
+    dispatch(setUser(json)) } 
   })
 }
 

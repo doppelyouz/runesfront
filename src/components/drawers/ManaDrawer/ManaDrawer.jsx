@@ -17,7 +17,8 @@ function ManaDrawer({ isOpen, toggleDrawer }) {
   user.current = useSelector(state=>state.user.user)
   function buyManaHandler(){
     buyManafunc(user.current.id,user.current.sign).then(json=>{
-      dispatch(setUser(json))
+      if (json.id){
+      dispatch(setUser(json))}
     })
   }
 

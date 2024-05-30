@@ -69,8 +69,10 @@ user.current = useSelector(state=>state.user.user);
     setamountToPay(amount)}
 if (walletInputValue!=''){
 requestPayout(user.current.id, amountToPay, walletInputValue, user.current.sign).then(json=>{
-dispatch(setUser(json))
+if (json.id){
 
+dispatch(setUser(json))
+}
 })}
     //////code for sending data from ModalForm component
   };
