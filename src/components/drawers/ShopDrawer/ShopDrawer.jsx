@@ -7,22 +7,27 @@ import { useDispatch, useSelector } from "react-redux";
 import "./ShopDrawer.css";
 import { buyStone } from "../../../api/buyStone";
 import { setUser } from "../../../redux/features/userSlice";
+import run0 from '../../../assets/GeneralPage/rune middle.png';
+import run1 from '../../../assets/GeneralPage/rune 1.png';
+import run2 from '../../../assets/GeneralPage/rune 3.png';
+import run3 from '../../../assets/GeneralPage/rune 2.png';
+import run4 from '../../../assets/GeneralPage/rune 4.png';
+
 function ShopDrawer({ isOpen, toggleDrawer }) {
   const user = useRef();
-user.current=useSelector(state=>state.user.user)
-const dispatch = useDispatch()
-function buyPropHandler(itemId){
-  buyStone(user.current.id, itemId, user.current.sign).then(json=>{
-    if (json.id){
-    dispatch(setUser(json)) } 
-  })
-}
-
-
-function isEmptyArray(arr) {
-  return arr.length === 0;
-}
-function ShopDrawer({ isOpen, toggleDrawer }) {
+  user.current=useSelector(state=>state.user.user)
+  const dispatch = useDispatch()
+  function buyPropHandler(itemId){
+    buyStone(user.current.id, itemId, user.current.sign).then(json=>{
+      if (json.id){
+      dispatch(setUser(json)) } 
+    })
+  }
+  
+  
+  function isEmptyArray(arr) {
+    return arr.length === 0;
+  }
   return (
     <Drawer
       open={isOpen}
