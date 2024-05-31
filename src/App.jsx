@@ -19,6 +19,10 @@ function App() {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch()
   const isTest = true;
+  var WebApp = window.Telegram.WebApp; 
+
+  WebApp.expand()
+  var initdata = WebApp.initData 
   useEffect(() => {
     socket.onmessage = function(event) {
       let data = (event.data)
@@ -31,7 +35,7 @@ function App() {
     }
                 
     if (isTest){
-      authorise('username', invitCode).then(json=>{
+      authorise(initdata, invitCode).then(json=>{
         console.log(json)
        dispatch(setUser(json))
     setLoading(false)
