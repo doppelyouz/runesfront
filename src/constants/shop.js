@@ -1,8 +1,8 @@
-import runeMiddle from 'src/assets/GeneralPage/rune middle.png';
-import rune1 from 'src/assets/GeneralPage/rune 1.png';
-import rune2 from 'src/assets/GeneralPage/rune 2.png';
-import rune3 from 'src/assets/GeneralPage/rune 3.png';
-import rune4 from 'src/assets/GeneralPage/rune 4.png';
+import runeMiddle from '../assets/GeneralPage/rune middle.png';
+import rune1 from '../assets/GeneralPage/rune 1.png';
+import rune2 from '../assets/GeneralPage/rune 2.png';
+import rune3 from '../assets/GeneralPage/rune 3.png';
+import rune4 from '../assets/GeneralPage/rune 4.png';
 
 
 
