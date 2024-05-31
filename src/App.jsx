@@ -11,8 +11,10 @@ import "react-toastify/dist/ReactToastify.css";
 import "react-modern-drawer/dist/index.css";
 import { authorise } from "./api/authorise";
 import { setUser } from "./redux/features/userSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 function App() {
+  const user = useRef()
+  user.current = useSelector(state=>state.user.user)
   const pathname = useRef();
   pathname.current = window.location.pathname;
   var invitCode = pathname.current.split('/')[1]
@@ -33,6 +35,11 @@ function App() {
       if (data.eventname == 'income_for_frog'){
         console.log(data.user)
         dispatch(setUser(data.user))
+      }
+      if (data.eventname == 'paid_invoice'){
+        if (data.id == user.current.id){
+          dispatch(setUser(data))
+        }
       }
     }
                 
