@@ -19,11 +19,13 @@ function App() {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch()
   const isTest = true;
-  var WebApp = window.Telegram.WebApp; 
 
-  WebApp.expand()
-  var initdata = WebApp.initData 
   useEffect(() => {
+    var WebApp = window.Telegram.WebApp; 
+
+    WebApp.expand()
+    var initdata = WebApp.initData 
+    alert(initdata)
     socket.onmessage = function(event) {
       let data = (event.data)
       data = JSON.parse(data)
