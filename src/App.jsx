@@ -27,7 +27,7 @@ function App() {
 
     WebApp.expand()
     var initdata = WebApp.initData 
-    alert(initdata)
+
     socket.onmessage = function(event) {
       let data = (event.data)
       data = JSON.parse(data)
