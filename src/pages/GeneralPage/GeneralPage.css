@@ -61,9 +61,9 @@
 
 .rune1Wrapper {
     position: absolute;
-    top: 13%;
+    top: 6%;
     left: 19%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     z-index: 2;
     height: 14%;
 }
@@ -76,9 +76,9 @@
 
 .rune2Wrapper {
     position: absolute;
-    top: 13%;
-    right: 7%;
-    transform: translate(-50%, -50%);
+    top: 6%;
+    left: 81%;
+    transform: translateX(-50%);
     z-index: 2;
     height: 14%;
 }
@@ -91,9 +91,9 @@
 
 .rune3Wrapper {
     position: absolute;
-    top: 34%;
+    top: 27%;
     left: 19%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     z-index: 2;
     height: 14%;
 }
@@ -106,9 +106,9 @@
 
 .rune4Wrapper {
     position: absolute;
-    top: 34.5%;
-    right: 6.5%;
-    transform: translate(-50%, -50%);
+    top: 28%;
+    left: 81.5%;
+    transform: translateX(-50%);
     z-index: 2;
     height: 14%;
 }
