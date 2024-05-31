@@ -18,38 +18,53 @@ function buyPropHandler(itemId){
   })
 }
 
+
 function isEmptyArray(arr) {
   return arr.length === 0;
 }
+function ShopDrawer({ isOpen, toggleDrawer }) {
   return (
     <Drawer
       open={isOpen}
       onClose={toggleDrawer}
       direction="bottom"
       zIndex={100}
-      size="fit-content"
+      size="auto"
       className="shopDrawer"
       overlayColor={"rgba(0,0,0,0.5)"}
     >
       <div className="drawer">
-        {shop.map((item) => (
+        {shop.map((item, index) => (
           isEmptyArray(user.current.balances[item.id+1]) &&
-         ( <div className="shopItem" key={item.id}>
-            <div className='iconWrapper'>
-              <img src={item.icon} alt="" />
+          (<div className="shopItem" key={item.id}>
+            <div className="iconWrapper">
+              <img
+                src={
+                  index === 0
+                    ? run0
+                    : index === 1
+                    ? run1
+                    : index === 2
+                    ? run2
+                    : index === 3
+                    ? run3
+                    : run4
+                }
+                alt=""
+              />
             </div>
-            <p className={`count ${item.count < 1 && 'big'}`}>
+            <p className={`count ${item.count < 1 && "big"}`}>
               {item.count} TON
             </p>
             <div className="main">
-              <div className='profileText'>PROFIT</div>
-              {item.profitTon > 0 && <div className='profitTon '>+{item.profitTon} TON</div>}
-              <div className='profitFehu'>+{item.profitFehu} FEHU</div>
+              <div className="profileText">PROFIT</div>
+              {item.profitTon > 0 && (
+                <div className="profitTon ">+{item.profitTon} TON</div>
+              )}
+              <div className="profitFehu">+{item.profitFehu} FEHU</div>
             </div>
-            <button className="buy" onClick={()=>{buyPropHandler(item.id+1)}}>
-              BUY
-            </button>
-          </div>) 
+            <button className="buy" onClick={()=>{buyPropHandler(item.id+1)}}>BUY</button>
+          </div>)
         ))}
         <GoBackButton onClick={toggleDrawer} />
       </div>

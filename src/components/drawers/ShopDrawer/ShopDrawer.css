@@ -1,5 +1,3 @@
-
-
 .shopDrawer {
     position: relative;
     max-width: 450px;
@@ -9,6 +7,8 @@
     border: 4px solid black;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+    min-height: 80vh;
+    max-height: 100vh;
 }
 
 .shopDrawer::before {
@@ -17,12 +17,12 @@
     top: 0px;
     left: 0px;
     right: 0px;
+    border-top-left-radius: 46px;
+    border-top-right-radius: 46px;
     bottom: 0px;
     border: 4px solid #809ba6;
     background: #5e7d93;
     pointer-events: none;
-    border-radius: 36px;
-    height: 100%;
 }
 
 .drawer {
@@ -44,7 +44,7 @@
         padding: 0 10px;
         padding-top: 30px;
     }
-    
+
 }
 
 .shopItem {
@@ -70,13 +70,13 @@
     background: #5e7d93;
     pointer-events: none;
     border-radius: 36px;
+    height: 100%;
 }
 
 .iconWrapper {
     position: relative;
     width: 55px;
     height: 70px;
-  
 }
 
 .iconWrapper img {
@@ -98,7 +98,7 @@
         2px -2px 0 #000,
         -2px 2px 0 #000,
         2px 2px 0 #000;
-        z-index: 11;
+    z-index: 11;
 }
 
 .count.big {
@@ -121,6 +121,7 @@
 .profitTon {
     font-size: 18px;
 }
+
 .profitFehu {
     font-size: 18px;
 }
@@ -141,7 +142,7 @@
     color: white;
     font-size: 30px;
     letter-spacing: 3px;
-    
+
     text-shadow:
         -2px -2px 0 #000,
         2px -2px 0 #000,
